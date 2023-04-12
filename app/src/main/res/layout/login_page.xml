@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".loginActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp"
+        >
+
+        <ImageView
+            android:layout_width="96dp"
+            android:layout_height="81dp"
+            android:src="@mipmap/page01" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="40dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+
+                android:text="喵~"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textSize="30sp"
+                android:text="欢迎来到pets store"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        >
+
+        <EditText
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:id="@+id/username"
+            />
+        <EditText
+            android:layout_width="368dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textSize="20sp"
+            android:inputType="textPassword"
+            android:id="@+id/password"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:id="@+id/login"
+            android:background="@drawable/button"
+            android:paddingLeft="150dp"
+            android:paddingRight="150dp"
+
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="200sp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—— 第三方登录——"
+            android:textSize="15sp"
+            />
+        <com.huawei.hms.support.hwid.ui.HuaweiIdAuthButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:hwid_button_theme="hwid_button_theme_no_title"
+            app:hwid_corner_radius="hwid_corner_radius_large"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/HuaweiIdAuthButton"
+            />
+    </LinearLayout>
+
+</LinearLayout>
